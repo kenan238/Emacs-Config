@@ -8,6 +8,11 @@
       "http://melpa.org/packages/"))
 (package-initialize)
 
+;; Menu/Toolbar
+(menu-bar-mode 1)
+(tool-bar-mode 0)
+
+
 ;; Bootstrap 'use-package'
 (eval-after-load 'gnutls
   '(add-to-list 'gnutls-trustfiles "/etc/ssl/cert.pem"))
