@@ -1,7 +1,14 @@
+;; kenan238's Emacs Config
+;; Sat, Jan 15
+
+;; ===Important Setup===
+
 ;; Add melpa
 (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (require 'package)
+
+
 ;; Any add to list for package-archives (to add marmalade or melpa) goes here
 (add-to-list 'package-archives 
     '("MELPA" .
@@ -11,7 +18,6 @@
 ;; Menu/Toolbar
 (menu-bar-mode 1)
 (tool-bar-mode 0)
-
 
 ;; Bootstrap 'use-package'
 (eval-after-load 'gnutls
@@ -24,12 +30,24 @@
 (require 'bind-key)
 (setq use-package-always-ensure t)
 
+;; Show line number
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+
+;; ===Important Setup===
+
+
+
 ;; Fira code mode
 (require 'fira-code-mode)
 (global-fira-code-mode)
 
-;; Show line number
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+
+
+
+
+
+
+;; Emacs Custom
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
