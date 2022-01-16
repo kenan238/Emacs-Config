@@ -1,5 +1,5 @@
 ;; kenan238's Emacs Config
-;; Last Change: Sat, Jan 16 2022 4:02 PM
+;; Last Change: Sat, Jan 16 2022 4:10 PM
 ;; https://github.com/kenan238
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -65,9 +65,9 @@
 ;; External Packages
 
 (require 'fira-code-mode)
+(fira-code-mode-set-font)
 (global-fira-code-mode)
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs Custom
-
