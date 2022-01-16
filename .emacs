@@ -1,5 +1,5 @@
 ;; kenan238's Emacs Config
-;; Sat, Jan 16 2022 3:33 PM
+;; Last Change: Sat, Jan 16 2022 4:02 PM
 ;; https://github.com/kenan238
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -37,8 +37,6 @@
 ;; Show line number
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
-;; Important Emacs Setup
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs Custom
@@ -47,20 +45,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(gruber-darker))
+ '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
+   '("569bc616c09c389761622ca5be12031dcd7a0fe4c28b1b7154242812b694318c" "3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
+ '(frame-brackground-mode 'dark)
  '(package-selected-packages
-   '(## use-package gruber-darker-theme fira-code-mode filladapt))
- '(send-mail-function 'mailclient-send-it))
+   '(zenburn-theme ## use-package gruber-darker-theme fira-code-mode filladapt))
+ '(send-mail-function 'mailclient-send-it)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Fira Code" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
-
-;; Emacs Custom
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -69,8 +67,6 @@
 (require 'fira-code-mode)
 (global-fira-code-mode)
  
-;; External Packages
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs Custom
