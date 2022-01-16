@@ -22,3 +22,5 @@ I am using Emacs 27
 I created this so i can: 
 - Share my configuration with people
 - Transfer it from a computer to another
+
+ok thx for reading bye
