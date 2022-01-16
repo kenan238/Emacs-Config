@@ -1,13 +1,15 @@
 ;; kenan238's Emacs Config
-;; Sat, Jan 15
+;; Sat, Jan 16 2022 3:33 PM
+;; https://github.com/kenan238
+ 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; ===Important Setup===
+;; Important Emacs Setup
 
 ;; Add melpa
 (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (require 'package)
-
 
 ;; Any add to list for package-archives (to add marmalade or melpa) goes here
 (add-to-list 'package-archives 
@@ -15,9 +17,11 @@
       "http://melpa.org/packages/"))
 (package-initialize)
 
+
 ;; Menu/Toolbar
 (menu-bar-mode 1)
 (tool-bar-mode 0)
+
 
 ;; Bootstrap 'use-package'
 (eval-after-load 'gnutls
@@ -33,22 +37,11 @@
 ;; Show line number
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
-;; ===Important Setup===
+;; Important Emacs Setup
 
-
-
-;; Fira code mode
-(require 'fira-code-mode)
-(global-fira-code-mode)
-
-
-
-
-
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs Custom
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -56,11 +49,29 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(gruber-darker))
  '(custom-safe-themes
-   '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default)))
+   '("3d2e532b010eeb2f5e09c79f0b3a277bfc268ca91a59cdda7ffd056b868a03bc" default))
+ '(package-selected-packages
+   '(## use-package gruber-darker-theme fira-code-mode filladapt))
+ '(send-mail-function 'mailclient-send-it))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Fira Code" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
 
- ;;'(default ((t (:family "Fira Code" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
+;; Emacs Custom
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; External Packages
+
+(require 'fira-code-mode)
+(global-fira-code-mode)
+ 
+;; External Packages
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Emacs Custom
+
