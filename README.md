@@ -17,6 +17,7 @@ I am using Emacs 27
 - [zenburn-theme](https://melpa.org/#/zenburn-theme)
 - [gruber-darker-theme](https://melpa.org/#/gruber-darker-theme)
 - [fira-code-mode](https://melpa.org/#/fira-code-mode)
+- [auto-complete](https://melpa.org/#/auto-complete)
 
 ## why did u create this
 I created this so i can: 
