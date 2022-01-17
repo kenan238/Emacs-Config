@@ -1,5 +1,5 @@
 ;; kenan238's Emacs Config
-;; Last Change: Sat, Jan 16 2022 7:56 PM
+;; Last Change: Sat, Jan 17 2022 7:18 PM
 ;; https://github.com/kenan238
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -57,7 +57,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(zenburn-theme ## use-package gruber-darker-theme fira-code-mode filladapt))
+   '(auto-complete zenburn-theme ## use-package gruber-darker-theme fira-code-mode filladapt))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(send-mail-function 'mailclient-send-it)
  '(tool-bar-mode nil)
@@ -96,6 +96,8 @@
 (require 'fira-code-mode)
 (fira-code-mode-set-font)
 (global-fira-code-mode)
+
+(ac-config-default)
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
