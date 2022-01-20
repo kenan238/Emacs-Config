@@ -1,5 +1,5 @@
 ;; kenan238's Emacs Config
-;; Last Change: Sat, Jan 17 2022 7:21 PM
+;; Last Change: Sat, Jan 20 2022 4:53 PM
 ;; https://github.com/kenan238
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -24,6 +24,7 @@
 
 
 ;; Bootstrap 'use-package'
+
 (eval-after-load 'gnutls
   '(add-to-list 'gnutls-trustfiles "/etc/ssl/cert.pem"))
 (unless (package-installed-p 'use-package)
@@ -35,11 +36,13 @@
 (setq use-package-always-ensure t)
 
 ;; Show line number
+
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs Custom
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -57,7 +60,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(auto-complete zenburn-theme ## use-package gruber-darker-theme fira-code-mode filladapt))
+   '(elcord auto-complete zenburn-theme ## use-package gruber-darker-theme fira-code-mode filladapt))
  '(pdf-view-midnight-colors '("#DCDCCC" . "#383838"))
  '(send-mail-function 'mailclient-send-it)
  '(tool-bar-mode nil)
@@ -98,6 +101,9 @@
 (global-fira-code-mode)
 
 (ac-config-default)
+
+(require 'elcord)
+(elcord-mode)
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -113,7 +119,6 @@
 ))
 
 (global-set-key "\C-c\C-f" 'kill-whole-line)
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
