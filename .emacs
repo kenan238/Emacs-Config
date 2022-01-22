@@ -1,5 +1,5 @@
 ;; kenan238's Emacs Config
-;; Last Change: Sat, Jan 20 2022 4:53 PM
+;; Last Change: Sat, Jan 22 2022 2:56 PM
 ;; https://github.com/kenan238
  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -119,6 +119,13 @@
 ))
 
 (global-set-key "\C-c\C-f" 'kill-whole-line)
+
+(global-set-key [(meta o)] (lambda () (interactive)
+    (when (region-active-p)
+       (let (deactivate-mark)
+	 (occur (regexp-quote (buffer-substring (region-beginning) (region-end))))))
+  
+))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
