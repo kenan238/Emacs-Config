@@ -1,14 +1,10 @@
 # Emacs-Config
 
-My [Emacs](https://www.gnu.org/software/emacs) (`.emacs`) configuration file. That's how i configure my emacs.
+Some [Emacs](https://www.gnu.org/software/emacs) (`.emacs`) configuration file.
 
-You are **free to use my configuration and modify it your likings**
+You can use it if you want.
 
-And if for *some reason*, some *weird reason*, your brain decides to contribute to this shit, you can.
-
-I will review any *PRs*.
-
-I am using Emacs 27
+Written on emacs 27.
 
 ## Required packages
 
@@ -18,11 +14,5 @@ I am using Emacs 27
 - [gruber-darker-theme](https://melpa.org/#/gruber-darker-theme)
 - [fira-code-mode](https://melpa.org/#/fira-code-mode)
 - [auto-complete](https://melpa.org/#/auto-complete)
-
-## why did u create this
-I created this so i can: 
-- Share my configuration with people
-- Transfer it from a computer to another
-- Let people copy this so they don't have to configure all the boring stuff
 
 ok thx for reading bye
